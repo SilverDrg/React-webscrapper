@@ -23,7 +23,7 @@ const Comments = () => {
     };
 
     const getContent = () => {
-        Axios.get('http://localhost:8081/api/').then((response) => {
+        Axios.get('/api/').then((response) => {
             console.log(response.data);
             let responseArray = response.data;
             let itemsArray: Array<ItemProps[]> = [];
@@ -38,7 +38,7 @@ const Comments = () => {
 
     const refreshContent = () => {
         setLoading(true);
-        Axios.get('http://localhost:8081/api/refresh').then((response) => {
+        Axios.get('/api/refresh').then((response) => {
             window.location.reload();
             setLoading(false);
         })

@@ -1,9 +1,9 @@
 import { Dialect } from "sequelize";
 
 export default {
-    HOST: "localhost",
+    HOST: "db",
     USER: "postgres",
-    PASSWORD: "silver",
+    PASSWORD: "example",
     DB: "reactwebscrapper",
     dialect: "postgres" as Dialect,
     pool: {
